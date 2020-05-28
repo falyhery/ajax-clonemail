@@ -1,24 +1,5 @@
-# README
+# Projet Clonemail en AJAX
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Le projet est disponible en production sur le lien ci-après : 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://ajax-clonemail.herokuapp.com/
