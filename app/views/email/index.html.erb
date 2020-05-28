@@ -1,0 +1,30 @@
+<h3>Clonemail</h3>
+
+<div class="form">
+    <%= form_tag(email_index_path, method: :post, class: "form", remote: true) do%>
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        <%= submit_tag 'Recevoir un email', class: "btn btn-primary btn-block" %>
+    <% end %>
+</div>
+
+<table class="table">
+    
+    <thead>
+        <tr>
+            <th scope="col">Liste des emails</th>
+            <th scope="col">Email sélectionné</th>
+        <tr>
+    </thead>
+
+    <tbody id="email-view">
+
+        <% @email.each do |email| %>
+        <tr>
+            <td><strong><%= link_to email.object, email_path(email.id), remote: true %></strong></td>
+            <td id="email_body"> </td>
+        </tr>
+        <% end %>
+
+    </tbody>
+</table>
+

@@ -1,0 +1,4 @@
+alert("le fichier JS est exécuté!");
+
+document.getElementById("email_body").innerHTML = "<%= j render 'email_body', email: @email %>";
+document.getElementById("<%= @email.id %>").innerHTML = "<%= j render 'email', email: @email %>";
